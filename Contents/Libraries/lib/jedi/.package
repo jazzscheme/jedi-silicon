@@ -31,7 +31,6 @@
                                 jazz.designer
                                 jazz.editor.dart
                                 jazz.ide
-                                jazz.moment
                                 jedi.install))
             (jedi.install (update jedi.install)
                           (dependencies jazz)))
