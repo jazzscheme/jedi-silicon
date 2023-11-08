@@ -1,0 +1,6 @@
+(module fmt.fmt-c scheme
+  (import (fmt))
+  (import (srfi-1))
+  (import (srfi-13))
+  (native private jazz:error)
+  (native private jazz:unspecified))

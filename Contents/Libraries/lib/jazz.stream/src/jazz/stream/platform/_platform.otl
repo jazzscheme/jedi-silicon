@@ -1,0 +1,11 @@
+(module jazz.stream.platform jazz
+  (import (jazz.syntax (phase syntax)))
+  (definition public createHardwareDecoder)
+  (definition public setHardwareDecoderListener)
+  (definition public stopHardwareDecoder)
+  (definition public destroyHardwareDecoder)
+  (definition public hardwareDecodeFrame)
+  (definition public hardwareRetrieveFrame)
+  (definition public hardwareFramePTS)
+  (definition public hardwareBindFrame)
+  (definition public hardwareReleaseFrame))

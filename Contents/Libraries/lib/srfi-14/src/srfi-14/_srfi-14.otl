@@ -1,0 +1,5 @@
+(module srfi-14 scheme
+  (import (scheme.syntax (phase syntax)))
+  (native private jazz:error)
+  (native private jazz:unspecified)
+  (native private bitwise-and))

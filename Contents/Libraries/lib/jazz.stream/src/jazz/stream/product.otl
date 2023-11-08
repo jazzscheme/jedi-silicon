@@ -1,0 +1,8 @@
+(module jazz.stream.product jazz
+  (import (jazz.io))
+  (definition custom-cc)
+  (definition gstreamer-source)
+  (definition gstreamer-cflags)
+  (definition gstreamer-libs)
+  (definition gstreamer-rpaths)
+  (definition (stream-rpaths)))
