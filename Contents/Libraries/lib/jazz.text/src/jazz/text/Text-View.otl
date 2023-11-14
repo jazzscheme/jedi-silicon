@@ -400,6 +400,7 @@
     (definition protected formatted-start-delimiter)
     (definition protected formatted-end-delimiter)
     (method public virtual (insert-formatted-line self line))
+    (method (standardize-string-representation self line))
     (method protected (process-formatted self input))
     (method (with-formatted-range self input proc))
     (method protected virtual (process-formatted-directive self directive input))
