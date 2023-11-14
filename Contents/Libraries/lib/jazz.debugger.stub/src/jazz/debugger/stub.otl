@@ -20,10 +20,10 @@
   (hub unregister-console)
   (hub unregister-stop)
   (hub update-process)
-  (class Jazz-Debugger-Stub-Interface extends Stub-Interface
+  (class Debugger-Stub-Interface extends Stub-Interface
     (method override (local-class self))
     (method override (remote-class self)))
-  (interface Jazz-Debugger-Stub metaclass Jazz-Debugger-Stub-Interface extends Remotable-Stub
+  (interface Debugger-Stub metaclass Debugger-Stub-Interface extends Remotable-Stub
     (method public virtual abstract (attach-process self __process __focus?))
     (method public virtual abstract (ready-process self __process __cookie))
     (method public virtual abstract (update-process self __process))
@@ -43,7 +43,7 @@
     (method public virtual abstract (register-stop self __process __thread __stop . __rest))
     (method public virtual abstract (unregister-stop self __process __thread __stop))
     (method public virtual abstract (inspect-object self __process __info)))
-  (class Jazz-Debugger-Local-Proxy extends Local-Proxy implements Jazz-Debugger-Stub
+  (class Debugger-Local-Proxy extends Local-Proxy implements Debugger-Stub
     (method override (stub-reference self))
     (method override (attach-process self __process __focus?))
     (method override (ready-process self __process __cookie))
@@ -64,7 +64,7 @@
     (method override (register-stop self __process __thread __stop . __rest))
     (method override (unregister-stop self __process __thread __stop))
     (method override (inspect-object self __process __info)))
-  (class Jazz-Debugger-Remote-Proxy extends Remote-Proxy implements Jazz-Debugger-Stub
+  (class Debugger-Remote-Proxy extends Remote-Proxy implements Debugger-Stub
     (method override (stub-reference self))
     (method override (attach-process self __process __focus?))
     (method override (ready-process self __process __cookie))

@@ -1,4 +1,5 @@
 (module jazz.presence.remotable.IOR jazz
+  (import (jazz.presence))
   (class IOR extends Object
     (method meta override (marshall-object self object))
     (method meta override (unmarshall-object self content))
