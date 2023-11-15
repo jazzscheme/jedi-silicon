@@ -1,5 +1,6 @@
 (module jazz.editor.scheme.text.Scheme-Text-View jazz
   (import (jazz.action))
+  (import (jazz.editor))
   (import (jazz.editor.lisp))
   (import (jazz.editor.scheme))
   (import (jazz.locale))
