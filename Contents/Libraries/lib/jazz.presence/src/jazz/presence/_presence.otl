@@ -68,6 +68,12 @@
   (definition protected (find-presence-by-uuid uuid))
   (definition protected (iterate-presences proc))
   (definition protected (collect-presences))
+  (definition invoke-timeout)
+  (definition (default-accept-handler proc presence))
+  (definition (default-connect-handler proc presence))
+  (definition (default-invoke-handler proc connection))
+  (definition (default-process-handler proc connection))
+  (definition (default-execute-handler proc connection))
   (class Remote-Presence extends Object
     (slot purpose getter generate)
     (slot uuid getter generate)

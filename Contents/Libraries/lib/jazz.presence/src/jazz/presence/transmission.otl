@@ -22,8 +22,6 @@
   (definition (read-header port))
   (definition (write-data data port))
   (definition (read-data port))
-  (definition (write-text-header code version port))
-  (definition (read-text-header port))
   (definition (write-text-data data port))
   (definition (read-text-data port))
   (definition (write-text data port))
