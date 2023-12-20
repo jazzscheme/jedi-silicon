@@ -15,8 +15,6 @@
   (import (jazz.tree))
   (import (jazz.ui))
   (import (jazz.view))
-  (definition priority-base)
-  (definition priority-sort?)
   (class Threads-View extends Layout-View
     (definition class-form)
     (method meta override (set-class-form self form))

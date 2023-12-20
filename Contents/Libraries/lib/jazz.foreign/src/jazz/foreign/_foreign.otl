@@ -15,8 +15,6 @@
   (hub set-body)
   (hub set-pointer-types)
   (hub set-signature)
-  (definition protected c-features)
-  (definition public (c-feature? name))
   (definition current-callable)
   (definition callback-exception)
   (definition public (with-callable name thunk))
