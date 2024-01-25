@@ -1,5 +1,6 @@
 (module jazz.network jazz
   (export (jazz.network.autoload))
+  (import (jazz.version))
   (hub get-debug?)
   (hub get-hits)
   (hub get-host)
@@ -30,6 +31,16 @@
   (definition public (parse-host/service str))
   (definition public (encode-host/port host port))
   (definition public (command-host/service name))
+  (class Connection-Broke extends Exception
+    (slot reason getter generate)
+    (method override (initialize self rs))
+    (method override (print self printer readably))
+    (method override (present-exception self)))
+  (hub get-reason)
+  (definition public (throw-connection-broke reason))
+  (definition protected (retry-exception-handler thunk (retries: retries (unspecified)) (delay: delay (unspecified))))
+  (definition protected (write-transmission-header code version port))
+  (definition protected (read-transmission-header port))
   (definition public (uuid? obj))
   (definition public (generate-uuid))
   (definition public (make-uuid))

@@ -21,7 +21,7 @@
     (method override (focus-default self))
     (method public (get-thread self))
     (method (show-hidden? self))
-    (method public (thread-changed self new-thread (new-stop (unspecified))))
+    (method public (thread-changed self new-thread new-stop))
     (method override (resize self dh dv))
     (method (on-show-hidden self evt))
     (method (on-select-frame self evt))

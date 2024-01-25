@@ -31,7 +31,7 @@
     (method public (get-process self))
     (method public (set-process self value))
     (method (show-detailed? self))
-    (method public (process-changed self new-process))
+    (method public (process-changed self new-process (force?: force? (unspecified))))
     (method override (resize self dh dv))
     (method (on-context-menu self evt))
     (method (on-double-click self evt))

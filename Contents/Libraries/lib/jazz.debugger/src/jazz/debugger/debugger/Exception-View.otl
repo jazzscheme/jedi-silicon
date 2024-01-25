@@ -11,7 +11,7 @@
     (slot stop)
     (method public (get-thread self))
     (method public (set-thread self value))
-    (method public (thread-changed self new-thread))
+    (method public (thread-changed self new-thread new-stop))
     (method package (update self)))
   (hub get-thread)
   (hub set-thread)
