@@ -1,2 +1,0 @@
-(module jazz.backend jazz
-  (export (jazz.backend.syntax)))

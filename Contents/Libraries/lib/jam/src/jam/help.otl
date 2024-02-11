@@ -1,2 +1,0 @@
-(module jam.help jazz
-  (definition package (jam-help arguments)))

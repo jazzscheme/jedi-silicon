@@ -1,3 +1,0 @@
-(module jazz.git.syntax jazz
-  (definition tracable?)
-  (macro public (git-external signature type . rest)))

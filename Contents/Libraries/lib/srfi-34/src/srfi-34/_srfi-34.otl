@@ -1,4 +1,0 @@
-(module srfi-34 scheme
-  (import (scheme.syntax-rules (phase syntax)))
-  (syntax public guard)
-  (syntax private guard-aux))

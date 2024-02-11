@@ -1,4 +1,0 @@
-(module jazz.calendar.Date-Row jazz
-  (import (jazz.designer))
-  (import (jazz.designer.ui))
-  (class Date-Row extends Combo-Row))

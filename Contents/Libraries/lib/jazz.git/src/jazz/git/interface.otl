@@ -1,5 +1,0 @@
-(module jazz.git.interface jazz
-  (export (jazz.git.foreign))
-  (import (jazz.git.foreign))
-  (definition public (git-pull-repository repo remote))
-  (definition public (git-workdir-clean? repo)))

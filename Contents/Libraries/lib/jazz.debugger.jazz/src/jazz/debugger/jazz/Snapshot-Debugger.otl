@@ -35,6 +35,7 @@
     (method override (get-thread-id self process thread))
     (method override (get-thread-stops self process thread))
     (method override (get-thread-active-stop self process thread))
+    (method override (get-thread-virtual-stop self process thread))
     (method override (break-thread self process thread))
     (method override (repl-thread self process thread))
     (method override (terminate-thread self process thread preserve-console?))

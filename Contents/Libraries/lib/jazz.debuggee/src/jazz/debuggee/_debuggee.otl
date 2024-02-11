@@ -90,6 +90,7 @@
   (definition controller-debugger)
   (definition preserved-exception-debugger)
   (definition preserved-exception-hook)
+  (definition preserved-filesystem-restricted?)
   (definition public (get-controller-debugger))
   (definition public (attach-to-controller debugger-proxy focus?))
   (definition public (ready-to-controller (debugger-cookie (unspecified))))

@@ -7,12 +7,21 @@
   (definition jas-code-length <fx>)
   (definition package jas-version <u8vector>)
   (definition jas-version-length <fx>)
-  (class Jas-Connection-Exception extends Exception)
-  (class Jas-Unable-To-Connect extends Jas-Connection-Exception)
-  (class Jas-Invalid-Version extends Jas-Connection-Exception)
-  (class Jas-Invalid-Path extends Jas-Connection-Exception)
-  (class Jas-Inexistant-Repository extends Jas-Connection-Exception)
-  (class Jas-Connection-Broke extends Jas-Connection-Exception)
+  (class Jas-Connection-Exception extends Exception
+    (slot reason getter generate)
+    (method override (initialize self (rs (unspecified))))
+    (method override (print self printer readably)))
+  (hub get-reason)
+  (class Jas-Unable-To-Connect extends Jas-Connection-Exception
+    (method override (present-exception self)))
+  (class Jas-Invalid-Version extends Jas-Connection-Exception
+    (method override (present-exception self)))
+  (class Jas-Invalid-Path extends Jas-Connection-Exception
+    (method override (present-exception self)))
+  (class Jas-Inexistant-Repository extends Jas-Connection-Exception
+    (method override (present-exception self)))
+  (class Jas-Connection-Broke extends Jas-Connection-Exception
+    (method override (present-exception self)))
   (definition public (throw-jas-connection-broke))
   (definition package (jas-write-code port))
   (definition package (jas-read-code port))

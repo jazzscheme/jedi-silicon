@@ -1,5 +1,0 @@
-(module jam.dependencies jazz
-  (import (jam))
-  (import (jazz.runtime))
-  (definition (collect-dependencies package product (feedback (unspecified))))
-  (definition package (jam-dependencies arguments)))

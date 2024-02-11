@@ -1,3 +1,0 @@
-(module jam.list jazz
-  (import (jazz.runtime))
-  (definition package (jam-list arguments)))

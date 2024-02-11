@@ -1,2 +1,0 @@
-(module fmt.mantissa scheme
-  (import (fmt.let-optionals (phase syntax))))

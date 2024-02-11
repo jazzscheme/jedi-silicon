@@ -8,4 +8,5 @@
     (method virtual public (get-id self))
     (method virtual public (get-stops self))
     (method virtual public (get-active-stop self))
+    (method virtual public (get-virtual-stop self))
     (method virtual public (set-repl-frame self frame))))

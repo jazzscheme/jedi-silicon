@@ -38,7 +38,7 @@
     (method override (present-exception self)))
   (hub get-reason)
   (definition public (throw-connection-broke reason))
-  (definition protected (retry-exception-handler thunk (retries: retries (unspecified)) (delay: delay (unspecified))))
+  (definition protected (retry-exception-handler thunk (retries: retries (unspecified)) (delay: delay (unspecified)) (feedback: feedback (unspecified))))
   (definition protected (write-transmission-header code version port))
   (definition protected (read-transmission-header port))
   (definition public (uuid? obj))

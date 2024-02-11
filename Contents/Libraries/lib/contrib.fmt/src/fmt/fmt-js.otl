@@ -1,5 +1,0 @@
-(module fmt.fmt-js scheme
-  (import (fmt))
-  (import (fmt.fmt-c))
-  (native private jazz:error)
-  (native private jazz:unspecified))

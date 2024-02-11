@@ -1,3 +1,0 @@
-(module fmt.let-optionals scheme
-  (import (scheme.syntax-rules))
-  (syntax public let-optionals*))

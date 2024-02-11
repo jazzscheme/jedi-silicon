@@ -1,4 +1,0 @@
-(module jazz.effect jazz
-  (export (jazz.effect.Effect (autoload Effect Effect)))
-  (export (jazz.effect.Wipe-Effect (autoload Wipe-Effect Wipe-Effect)))
-  (hub animate))

@@ -18,17 +18,20 @@
     (slot name getter generate)
     (method override (initialize self name . rest))
     (method override (emit-expression self declaration walker resume environment backend)))
+  (special-form (c-include walker resume declaration environment form-src))
   (class C-Initialize extends Expression
     (slot name getter generate)
     (slot code getter generate)
     (method override (initialize self name code . rest))
     (method override (emit-expression self declaration walker resume environment backend)))
   (hub get-code)
+  (special-form (c-initialize walker resume declaration environment form-src))
   (class C-Declare extends Expression
     (slot name getter generate)
     (slot code getter generate)
     (method override (initialize self name code . rest))
     (method override (emit-expression self declaration walker resume environment backend)))
+  (special-form (c-declare walker resume declaration environment form-src))
   (class C-Named-Declare-Declaration extends Declaration
     (slot code getter generate)
     (method override (initialize self . rest))
@@ -67,10 +70,13 @@
     (slot arguments getter generate)
     (method override (initialize self code arguments . rest))
     (method override (emit-expression self declaration walker resume environment backend)))
+  (special-form (c-code walker resume declaration environment form-src))
   (class C-Function extends Expression
     (slot expansion getter generate)
     (method override (initialize self expansion . rest))
     (method override (emit-expression self declaration walker resume environment backend)))
+  (special-form (c-function walker resume declaration environment form-src))
+  (special-form (c-lambda walker resume declaration environment form-src))
   (class C-Definition-Declaration extends Declaration
     (slot signature accessors generate)
     (slot parameter-types getter generate)

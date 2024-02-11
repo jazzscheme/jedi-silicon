@@ -1,3 +1,0 @@
-(module jazz.builder.run jazz
-  (import (jazz.builder))
-  (definition (builder)))

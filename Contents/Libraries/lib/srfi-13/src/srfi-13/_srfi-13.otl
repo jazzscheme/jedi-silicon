@@ -1,8 +1,0 @@
-(module srfi-13 scheme:
-  (import (scheme (except string->list string-fill! string-copy)))
-  (import (scheme.syntax (phase syntax)))
-  (import (srfi-13.syntax (phase syntax)))
-  (import (srfi-14))
-  (native private jazz:error)
-  (native private jazz:unspecified)
-  (native private bitwise-and))

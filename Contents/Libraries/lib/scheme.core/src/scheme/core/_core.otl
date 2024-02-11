@@ -16,4 +16,7 @@
   (native jazz:object-size)
   (native jazz:make-class-info)
   (native jazz:add-slot)
-  (native jazz:codes-forms))
+  (native jazz:codes-forms)
+  (special-form (%%object walker resume declaration environment form-src))
+  (special-form (%%object-ref walker resume declaration environment form-src))
+  (special-form (%%object-set! walker resume declaration environment form-src)))

@@ -51,7 +51,6 @@
   (native jazz:position->filepos)
   (native jazz:filepos-line)
   (native jazz:filepos-col)
-  (native jazz:iterate-table-unsafe)
-  (native jazz:search-table-unsafe)
+  (native jazz:table-iterate)
   (native jazz:iterate-table)
   (native jazz:search-table))

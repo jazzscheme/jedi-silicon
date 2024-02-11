@@ -51,6 +51,7 @@
   (hub update)
   (hub working-index)
   (hub working-status)
+  (definition public (jas-settings))
   (definition public (jas-init root (bare?: bare? (unspecified)) (open?: open? (unspecified))))
   (definition public (jas-open root))
   (definition public (jas-config-get repo key))
