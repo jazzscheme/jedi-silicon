@@ -1,0 +1,6 @@
+(module jazz.editor.lua.autoload jazz
+  (export (jazz.editor.lua.parser.Lua-Parser (autoload (Lua-Parser))))
+  (export (jazz.editor.lua.syntax.Lua-Syntax (autoload (Lua-Syntax))))
+  (export (jazz.editor.lua.text.Lua-Explorer (autoload (Lua-Explorer))))
+  (export (jazz.editor.lua.text.Lua-Text-Preferences (autoload (Lua-Text-Preferences))))
+  (export (jazz.editor.lua.text.Lua-Text-View (autoload (Lua-Text-View)))))

@@ -1,0 +1,5 @@
+(module jedi jazz
+  (export (jedi.autoload))
+  (import (jazz.debugger))
+  (import (jazz.presence))
+  (definition protected (collect-world-debuggees)))

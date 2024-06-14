@@ -1,0 +1,9 @@
+(module jazz.outline jazz
+  (export (jazz.outline.Display-Outline (autoload (Display-Outline))))
+  (export (jazz.outline.Outline (autoload (Outline))))
+  (export (jazz.outline.Outline-Model (autoload (Outline-Model))))
+  (export (jazz.outline.Outline-Row (autoload (Outline-Row))))
+  (export (jazz.outline.Outline-View (autoload (Outline-View))))
+  (export (jazz.outline.Outline-View-Old (autoload (Outline-View-Old))))
+  (export (jazz.outline.Root-Row (autoload (Root-Row))))
+  (export (jazz.outline.Sparse-Outline (autoload (Sparse-Outline)))))

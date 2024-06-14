@@ -1,0 +1,12 @@
+(module jazz.process jazz
+  (export (jazz.process.autoload))
+  (definition Active-Process)
+  (definition Process-Active?)
+  (definition public (current-process))
+  (definition package (set-current-process process))
+  (definition package (activate-process))
+  (definition public (process-active?))
+  (definition package *unloading-process?*)
+  (definition package *reloading-process?*)
+  (definition public (unloading-process?))
+  (definition public (reloading-process?)))

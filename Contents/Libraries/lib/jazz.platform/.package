@@ -1,0 +1,40 @@
+(package jazz.platform
+  
+  (title "Platform")
+  (description "Operating system platform access")
+  (authors "Guillaume Cartier")
+  (stage release)
+  (root "src")
+  (install jazz.platform.install)
+  (products (jazz.platform (alias platform)
+                           (remote (windows "togethersphere.com/jazz-platform-windows"))
+                           (product jazz.platform.product)
+                           (update jazz.platform
+                                   jazz.platform.callback
+                                   jazz.platform.install
+                                   jazz.platform.library
+                                   jazz.platform.product
+                                   jazz.platform.requests
+                                   jazz.platform.scale
+                                   jazz.platform.syntax
+                                   jazz.platform.trace)
+                           (library
+                             (link-options
+                                (windows (libdir "~~jazz/foreign/windows/lib")
+                                         "-mwindows"
+                                         "-lole32" "-loleaut32"
+                                         "-lwinmm" "-lpdh" "-lpsapi")))
+                           (dependencies jazz
+                                         jazz.appl
+                                         jazz.foreign
+                                         jazz.io))
+            (platform-all (dependencies jazz.appl
+                                        jazz.cairo
+                                        jazz.crash
+                                        jazz.fontconfig
+                                        jazz.freetype
+                                        jazz.opengl
+                                        jazz.platform
+                                        jazz.splash
+                                        jazz.zlib)))
+  (project ".project"))

@@ -1,0 +1,3 @@
+(module jazz.debugger.snapshot.Computer-Snapshot jazz
+  (import (jazz.component))
+  (class Computer-Snapshot extends Component))

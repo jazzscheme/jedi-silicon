@@ -1,0 +1,8 @@
+(module jazz.application jazz
+  (export (jazz.application.autoload))
+  (import (jazz.process))
+  (definition public (current-application))
+  (definition package (set-current-application application))
+  (definition public application-active? <bool>)
+  (definition package (set-application-active? flag <bool>))
+  (definition public (current-toplevel)))

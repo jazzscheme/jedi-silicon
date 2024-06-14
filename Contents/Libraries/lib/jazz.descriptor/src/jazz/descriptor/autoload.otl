@@ -1,0 +1,7 @@
+(module jazz.descriptor.autoload jazz
+  (export (jazz.descriptor.Child-Descriptor (autoload (Child-Descriptor))))
+  (export (jazz.descriptor.Children-Descriptor (autoload (Children-Descriptor))))
+  (export (jazz.descriptor.Component-Descriptor (autoload (Component-Descriptor))))
+  (export (jazz.descriptor.Properties-Descriptor (autoload (Properties-Descriptor))))
+  (export (jazz.descriptor.Property-Descriptor (autoload (Property-Descriptor))))
+  (export (jazz.descriptor.meta (autoload (Component-Meta-Descriptor) (Properties-Meta-Descriptor) (Property-Meta-Descriptor) (Children-Meta-Descriptor)))))

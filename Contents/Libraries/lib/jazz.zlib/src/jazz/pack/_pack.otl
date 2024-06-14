@@ -1,0 +1,16 @@
+(module jazz.pack jazz
+  (import (jazz.io))
+  (import (jazz.zlib))
+  (import (jazz.version))
+  (class Invalid-Pack extends Exception
+    (method override (present-exception self)))
+  (definition public (throw-invalid-pack))
+  (definition pack-code)
+  (definition pack-version)
+  (definition (write-pack-header port count))
+  (definition (read-pack-header port))
+  (definition protected compressed-extensions)
+  (definition protected (register-compressed extension))
+  (definition protected (already-compressed? extension))
+  (definition public (pack-directory dir pack))
+  (definition public (unpack-directory pack dir)))

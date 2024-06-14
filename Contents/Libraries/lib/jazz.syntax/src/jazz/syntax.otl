@@ -1,0 +1,32 @@
+(module jazz.syntax jazz
+  (import (jazz.core (phase syntax)))
+  (syntax public define-setting)
+  (syntax public export-delayed)
+  (class Lexical-Special extends Expression
+    (slot form getter generate)
+    (method override (initialize self form . rest))
+    (method override (emit-expression self declaration walker resume environment)))
+  (hub get-form)
+  (special-form (lexicalname walker resume declaration environment form-src))
+  (class Time-Special extends Expression
+    (slot expr getter generate)
+    (slot port getter generate)
+    (method override (initialize self expr port . rest))
+    (method override (emit-expression self declaration walker resume environment)))
+  (hub get-expr)
+  (hub get-port)
+  (special-form (time walker resume declaration environment form-src))
+  (syntax public once)
+  (class Inline extends Expression
+    (slot expression getter generate)
+    (method override (initialize self expression . rest))
+    (method override (emit-expression self declaration walker resume environment)))
+  (hub get-expression)
+  (special-form (inline walker resume declaration environment form-src))
+  (class Site-Special extends Expression
+    (slot expression getter generate)
+    (method override (initialize self expression))
+    (method override (emit-expression self declaration walker resume environment))
+    (method override (tree-fold self down up here seed environment)))
+  (special-form (site walker resume declaration environment form-src))
+  (macro public (tie . objects)))

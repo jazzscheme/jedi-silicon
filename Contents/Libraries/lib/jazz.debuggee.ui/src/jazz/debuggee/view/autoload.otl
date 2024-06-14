@@ -1,0 +1,10 @@
+(module jazz.debuggee.view.autoload jazz
+  (export (jazz.debuggee.view.Exception-Log-Node (autoload (Exception-Log-Node))))
+  (export (jazz.debuggee.view.Log-Node (autoload (Log-Node))))
+  (export (jazz.debuggee.view.Log-Tree (autoload (Log-Tree))))
+  (export (jazz.debuggee.view.Log-View (autoload (Log-View))))
+  (export (jazz.debuggee.view.Profiler-Manager (autoload (Profiler-Manager))))
+  (export (jazz.debuggee.view.Profiler-View (autoload (Profiler-View))))
+  (export (jazz.debuggee.view.Resources-Monitor (autoload (Resources-Monitor))))
+  (export (jazz.debuggee.view.Resources-View (autoload (Resources-View))))
+  (export (jazz.debuggee.view.View-Debugger (autoload (View-Debugger)))))

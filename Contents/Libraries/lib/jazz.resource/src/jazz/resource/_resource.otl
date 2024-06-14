@@ -1,0 +1,25 @@
+(module jazz.resource jazz
+  (class Resource extends Object
+    (method meta override (marshall-object self obj))
+    (method meta override (unmarshall-object self content))
+    (method meta public virtual (resource-type self))
+    (slot name getter generate)
+    (method override (initialize self name))
+    (method override (compare-object self target))
+    (method override (print self output readably)))
+  (hub get-name)
+  (definition public (resource? object))
+  (class Image-Resource extends Resource
+    (method meta override (resource-type self)))
+  (definition package (construct-image-resource name))
+  (definition public (disabled-image-resource resource))
+  (definition public (default-disabled-resource resource))
+  (class Icon-Resource extends Resource
+    (method meta override (resource-type self)))
+  (definition package (construct-icon-resource name))
+  (class Cursor-Resource extends Resource
+    (method meta override (resource-type self)))
+  (definition package (construct-cursor-resource name))
+  (class Sound-Resource extends Resource
+    (method meta override (resource-type self)))
+  (definition package (construct-sound-resource name)))

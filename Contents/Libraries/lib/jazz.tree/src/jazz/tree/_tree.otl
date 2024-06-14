@@ -1,0 +1,9 @@
+(module jazz.tree jazz
+  (export (jazz.tree.autoload))
+  (import (jazz.tree.autoload))
+  (import (jazz.component))
+  (import (jazz.outline))
+  (definition public (allocate-tree-label title) <Tree-Label>)
+  (definition public (find-by-title row title))
+  (definition public exceeds-tooltips?)
+  (definition public (set-exceeds-tooltips? flag)))

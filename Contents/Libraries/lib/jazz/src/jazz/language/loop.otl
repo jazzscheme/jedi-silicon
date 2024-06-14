@@ -1,0 +1,6 @@
+(module jazz.language.loop scheme
+  (import (jazz.dialect.kernel))
+  (import (jazz.dialect.syntax (phase syntax)))
+  (native private jazz:->string)
+  (native private jazz:error)
+  (syntax public loop))

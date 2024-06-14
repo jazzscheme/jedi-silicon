@@ -1,0 +1,2 @@
+(module jazz.editor.python jazz
+  (export (jazz.editor.python.autoload)))
